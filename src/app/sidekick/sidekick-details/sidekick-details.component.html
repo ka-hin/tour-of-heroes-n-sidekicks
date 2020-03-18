@@ -1,0 +1,11 @@
+<div *ngIf="sidekick">
+    <h2>{{sidekick.name | uppercase}}</h2>
+    <div>ID: {{sidekick.id}}</div>
+    <div>
+        <label>Name: 
+            <input [(ngModel)]="sidekick.name" placeholder="name"/>
+        </label>
+        <button (click)="delSidekick()">Delete</button>
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>
